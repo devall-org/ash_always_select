@@ -1,6 +1,6 @@
 defmodule AshAlwaysSelect do
-  @ash_always_select %Spark.Dsl.Section{
-    name: :ash_always_select,
+  @always_select %Spark.Dsl.Section{
+    name: :always_select,
     describe: """
     Set always_select? to true for all attributes.
     """,
@@ -23,6 +23,6 @@ defmodule AshAlwaysSelect do
   }
 
   use Spark.Dsl.Extension,
-    sections: [@ash_always_select],
+    sections: [@always_select],
     transformers: [AshAlwaysSelect.Transformer]
 end
